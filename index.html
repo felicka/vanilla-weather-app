@@ -4,42 +4,131 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
+    <title>Vanilla Weather App</title>
   </head>
   <link href="src/style.css" rel="stylesheet" />
   <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
     crossorigin="anonymous"
   />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap"
+    rel="stylesheet"
+  />
   <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    src="https://kit.fontawesome.com/448d85e3bd.js"
     crossorigin="anonymous"
   ></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
   <body>
     <div class="container">
-      <h1>City</h1>
-      <ul>
-        <li>Date</li>
-        <li>Description</li>
-      </ul>
+      <div class="weather-app">
+        <h1>City</h1>
+        <ul>
+          <li>Date</li>
+          <li>Description</li>
+        </ul>
 
-      <h2>Temperature 10℃</h2>
-      <ul>
-        <li>Humidity: 10%</li>
-        <li>Wind: 10 km/h</li>
-        <li>Feels like: 10℃</li>
-      </ul>
+        <div class="row align-items-center main-temp">
+          <div class="col-4">
+            <div class="block">
+              <div class="clearfix">
+                <h2>Temperature 10℃</h2>
+                <h6>L: 10 H: 10</h6>
+              </div>
 
-      <hr />
-      <p>Search</p>
-      <p>Current</p>
-      <p>Open-source code by Felicia</p>
+              <div class="col-4">
+                <ul>
+                  <li>Humidity: 10%</li>
+                  <li>Wind: 10 km/h</li>
+                  <li>Feels like: 10℃</li>
+                </ul>
+              </div>
 
-      <script src="index.js"></script>
+              <div class="col-4">Image</div>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div class="container">
+          <div class="daily-temp">
+            <div class="row align-items-start">
+              <div class="col-2">
+                <div
+                  class="card-body mx-auto align-items-center d-flex justify-content-center flex-column"
+                >
+                  <span class="card-title">Mon</span>
+                  <i class="fa-solid fa-cloud"></i>
+                  <p class="card-temp">19℃ 20℃</p>
+                </div>
+              </div>
+              <div class="col-2">
+                <div
+                  class="card-body mx-auto align-items-center d-flex justify-content-center flex-column"
+                >
+                  <span class="card-title">Tue</span>
+                  <i class="fa-regular fa-sun"></i>
+                  <p class="card-temp">19℃ 20℃</p>
+                </div>
+              </div>
+              <div class="col-2">
+                <div
+                  class="card-body mx-auto align-items-center d-flex justify-content-center flex-column"
+                >
+                  <span class="card-title">Wed</span>
+                  <i class="fa-solid fa-cloud-showers-heavy"></i>
+                  <p class="card-temp">19℃ 20℃</p>
+                </div>
+              </div>
+              <div class="col-2">
+                <div
+                  class="card-body mx-auto align-items-center d-flex justify-content-center flex-column"
+                >
+                  <span class="card-title">Thu</span>
+                  <i class="fa-solid fa-cloud-sun"></i>
+                  <p class="card-temp">19℃ 20℃</p>
+                </div>
+              </div>
+              <div class="col-2">
+                <div
+                  class="card-body mx-auto align-items-center d-flex justify-content-center flex-column"
+                >
+                  <span class="card-title">Fri</span>
+                  <i class="fa-solid fa-wind"></i>
+                  <p class="card-temp">19℃ 20℃</p>
+                </div>
+              </div>
+              <div class="col-2">
+                <div
+                  class="card-body mx-auto align-items-center d-flex justify-content-center flex-column"
+                >
+                  <span class="card-title">Sat</span>
+                  <i class="fa-solid fa-wind"></i>
+                  <p class="card-temp">19℃ 20℃</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <p>Search</p>
+        <p>Current</p>
+        <p>Open-source code by Felicia</p>
+      </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
