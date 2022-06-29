@@ -1,3 +1,65 @@
 h1 {
-  color: aquamarine;
+  color: black;
+  font-family: IM Fell English SC;
+  font-size: 50px;
+  margin-left: 30px;
+}
+h2 {
+  font: size 28px;
+}
+
+h6 {
+  font-style: normal;
+  font-family: dilact gothic;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  color: black;
+  font-family: didact gothic;
+  size: 15px;
+  font-weight: 100;
+  list-style: none;
+  text-align: left;
+}
+
+.weather-app {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.row {
+  text-align: left;
+}
+
+.block {
+  text-align: center;
+}
+
+.weather {
+  font-size: 20px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.daily-temp {
+  font-family: didact gothic;
+  margin: auto;
+  font-size: 12px;
+}
+
+.coder {
+  text-align: center;
+  font-size: 14px;
+  font-family: monospace;
+  margin: 20 pax auto;
 }
