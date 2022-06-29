@@ -45,21 +45,22 @@
             <div class="block">
               <div class="clearfix">
                 <h2>Temperature 10℃</h2>
-                <h6>L: 10 H: 10</h6>
+                <h6>L: 10℃ H: 10 ℃</h6>
               </div>
-
-              <div class="col-4">
-                <ul>
-                  <li>Humidity: 10%</li>
-                  <li>Wind: 10 km/h</li>
-                  <li>Feels like: 10℃</li>
-                </ul>
-              </div>
-
-              <div class="col-4">Image</div>
             </div>
           </div>
+
+          <div class="col-4">
+            <ul>
+              <li>Humidity: 10%</li>
+              <li>Wind: 10 km/h</li>
+              <li>Feels like: 10℃</li>
+            </ul>
+          </div>
+
+          <div class="col-4">Image</div>
         </div>
+
         <br />
 
         <div class="container">
@@ -122,13 +123,27 @@
             </div>
           </div>
         </div>
-
         <hr />
-        <p>Search</p>
-        <p>Current</p>
-        <p>Open-source code by Felicia</p>
+
+        <div class="container">
+          <form class="search-form">
+            <div class="row">
+              <div class="col-6">Enter city name...</div>
+              <div class="col-3">Search</div>
+              <div class="col-3">Current</div>
+            </div>
+          </form>
+        </div>
+
+        <br />
+        <p class="coder">
+          <a href="https://github.com/felicka/my-weather-app" target="_blank"
+            >Open-source code
+          </a>
+          by Felicia
+        </p>
       </div>
     </div>
-    <script src="index.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
