@@ -34,27 +34,33 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <h1>City</h1>
+        <h1>
+          <span class="city" id="city"> , </span>
+          <span class="country" id="country"></span>
+        </h1>
         <ul>
-          <li>Date</li>
-          <li>Description</li>
+          <li id="date">Date</li>
+          <li id="description"></li>
         </ul>
 
         <div class="row align-items-center main-temp">
           <div class="col-4">
             <div class="block">
               <div class="clearfix">
-                <h2>Temperature 10℃</h2>
-                <h6>L: 10℃ H: 10 ℃</h6>
+                <h2>
+                  <span class="temperature" id="temperature"></span>
+                  <span class="units">℃ </span>
+                </h2>
+                <h6>L:<span id="min"></span>° | H:<span id="max"></span>°</h6>
               </div>
             </div>
           </div>
 
           <div class="col-4">
             <ul>
-              <li>Humidity: 10%</li>
-              <li>Wind: 10 km/h</li>
-              <li>Feels like: 10℃</li>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span>km/h</li>
+              <li>Feels like: <span id="feels"></span>℃</li>
             </ul>
           </div>
 
@@ -146,7 +152,7 @@
           </form>
         </div>
 
-        <br />
+        <hr />
         <p class="coder">
           <a href="https://github.com/felicka/my-weather-app" target="_blank"
             >Open-source code
