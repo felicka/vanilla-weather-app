@@ -67,3 +67,11 @@ li {
   font-family: monospace;
   margin: 10 px auto;
 }
+
+.active {
+  color: black;
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
+}
