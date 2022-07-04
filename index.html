@@ -49,14 +49,14 @@
               <div class="clearfix">
                 <h2>
                   <span class="temperature" id="temperature"></span>
-                  <span class="units">℃ </span>
+                  <span class="units">℃ | ℉</span>
                 </h2>
-                <img id="icon" />
+
                 <h6>L:<span id="min"></span>° | H:<span id="max"></span>°</h6>
               </div>
             </div>
           </div>
-
+          <div class="col-4"><img id="icon" /></div>
           <div class="col-4">
             <ul>
               <li>Humidity: <span id="humidity"></span>%</li>
@@ -64,8 +64,6 @@
               <li>Feels like: <span id="feels"></span>℃</li>
             </ul>
           </div>
-
-          <div class="col-4">Image</div>
         </div>
 
         <br />
@@ -133,21 +131,26 @@
         <hr />
 
         <div class="container">
-          <form class="search-form">
+          <form id="search-form" class="search-form">
             <div class="row">
               <div class="col-6">
                 <input
-                  type="text"
+                  type="search"
                   class="form-control"
                   placeholder="Enter city name..."
                   autofocus="on"
+                  id="city-input"
                 />
               </div>
               <div class="col-3">
-                <button type="button" class="btn btn-dark">Search</button>
+                <button type="submit" value="Search" class="btn btn-dark">
+                  Search
+                </button>
               </div>
               <div class="col-3">
-                <button type="button" class="btn btn-dark">Current</button>
+                <button type="button" id="location-button" class="btn btn-dark">
+                  Current
+                </button>
               </div>
             </div>
           </form>

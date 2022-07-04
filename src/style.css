@@ -5,7 +5,7 @@ h1 {
   margin-left: 30px;
 }
 h2 {
-  font: size 28px;
+  font: size 40px;
 }
 
 h6 {
@@ -45,6 +45,10 @@ li {
 
 .weather {
   font-size: 20px;
+}
+
+.units {
+  font-size: 10px;
 }
 
 .card-body {
