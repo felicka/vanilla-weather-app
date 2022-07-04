@@ -35,11 +35,11 @@
     <div class="container">
       <div class="weather-app">
         <h1>
-          <span class="city" id="city"> , </span>
+          <span class="city" id="city"></span> ,
           <span class="country" id="country"></span>
         </h1>
         <ul>
-          <li id="date">Date</li>
+          <li>Last updated: <span id="date"></span></li>
           <li id="description"></li>
         </ul>
 
@@ -51,6 +51,7 @@
                   <span class="temperature" id="temperature"></span>
                   <span class="units">℃ </span>
                 </h2>
+                <img id="icon" />
                 <h6>L:<span id="min"></span>° | H:<span id="max"></span>°</h6>
               </div>
             </div>
@@ -151,15 +152,13 @@
             </div>
           </form>
         </div>
-
-        <hr />
-        <p class="coder">
-          <a href="https://github.com/felicka/my-weather-app" target="_blank"
-            >Open-source code
-          </a>
-          by Felicia
-        </p>
       </div>
+      <p class="coder">
+        <a href="https://github.com/felicka/my-weather-app" target="_blank"
+          >Open-source code</a
+        >
+        by Felicia
+      </p>
     </div>
     <script src="src/index.js"></script>
   </body>
