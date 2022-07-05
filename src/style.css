@@ -3,68 +3,62 @@ body {
 }
 h1 {
   color: black;
-
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 100;
-  line-height: 25px;
-}
-
-h6 {
-  font-style: normal;
-  font-family: dilact gothic;
+  line-height: 30px;
+  margin-bottom: 0;
 }
 
 ul {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 li {
-  color: black;
-  font-family: didact gothic;
-  size: 15px;
-  font-weight: 100;
   list-style: none;
   padding: 0;
   margin: 0;
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 20px;
+}
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
 }
 
 .weather-app {
-  border: 1px solid black;
+  border: 1px solid #dadde1;
   padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
-  max-width: 600px;
+  border-radius: 5px;
 }
 
-.row {
-  text-align: left;
+.overview {
+  margin-bottom: 20px;
 }
 
-.block {
-  text-align: center;
+.weather-temperature img {
+  width: 64px;
+  height: 64px;
+  margin-right: 6px;
 }
 
-.weather {
-  font-size: 20px;
+.weather-temperature strong {
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
 }
 
-.units {
-  font-size: 10px;
-}
-
-.card-body {
-  text-align: center;
-}
-
-.daily-temp {
-  font-family: didact gothic;
-  margin: auto;
-  font-size: 12px;
+.weather-temperature .units {
+  position: relative;
+  font-size: 15px;
+  top: -34px;
 }
 
 .coder {
-  text-align: center;
+  text-align: left;
   font-size: 14px;
   font-family: monospace;
   margin: 10 px auto;
