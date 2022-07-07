@@ -33,6 +33,8 @@ function formatDay(timestamp) {
 //
 
 function displayTemperature(response) {
+  celsiusTemperature = response.data.main.temp;
+
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.name;
 
