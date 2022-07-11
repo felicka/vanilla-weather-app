@@ -67,7 +67,7 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  let apiKey = "f5fd95491fee61e88406e10ef8bac3ba4";
+  let apiKey = "fd8d1409866553a493730aeed9a355b9";
   let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
@@ -104,7 +104,7 @@ function displayTemperature(response) {
 }
 
 function search(city) {
-  let apiKey = "5fd95491fee61e88406e10ef8bac3ba4";
+  let apiKey = "fd8d1409866553a493730aeed9a355b9";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 }
@@ -143,4 +143,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-search("Tbilisi");
+search("London");
